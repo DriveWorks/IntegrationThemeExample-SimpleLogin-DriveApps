@@ -1,5 +1,5 @@
 # DriveWorks Live - Integration Theme Example - Simple Login (DriveApps)
-### Release: 1.1.0
+### Release: 1.2.0
 #### Minimum DriveWorks Version: 18.1
 
 A simple distributable template that renders a predefined DriveApp after a valid login.
@@ -8,9 +8,10 @@ Please note: DriveWorks are not accepting pull requests for this example.
 Join our [online community](https://my.driveworks.co.uk) for discussion, resources and to suggest other examples.
 
 ### This example:
-- Shows a login screen - credentials attached to a config file
-- Connects to the DriveWorks API
-- After a successful login, renders a DriveApp with a basic external header
+- Shows a login screen - credentials attached to a config file.
+- Connects to the DriveWorks API.
+- After a successful login, renders a DriveApp with a basic external header.
+- Displays DriveApp Alias in tab title.
 
 ### To use:
 1. Clone this repository, or download as a .zip
@@ -48,6 +49,7 @@ If you are unable to use the dynamic library loading demonstrated in this exampl
         * Ensure you are running DriveWorks 18.2 or above
         * Ensure HTTPS is enabled in DriveWorks Live's settings
         * Ensure a valid SSL certificate has been configured via DriveWorksConfigUser.xml.
+        * Ensure if using an incognito/private window, third-party cookies are not blocked (see browser settings).
         * See [Integration Theme Settings](https://docs.driveworkspro.com/Topic/IntegrationThemeSettings) for additional guidance.
 
 ---

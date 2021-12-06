@@ -12,6 +12,6 @@ const config = {
     driveAppPingInterval: 0,
     // (Optional) Configure 'Run' view
     run: {
-        showWarningOnExit: true, // Toggle warning dialog when exiting "Run" view with potentially unsaved changes (where supported)
+        showWarningOnExit: false, // Toggle warning dialog when exiting "Run" view with potentially unsaved changes (where supported)
     },
 };
