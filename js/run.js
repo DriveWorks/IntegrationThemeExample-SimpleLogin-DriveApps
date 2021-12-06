@@ -1,7 +1,7 @@
 // Get config
 const SERVER_URL = config.serverUrl;
 const GROUP_ALIAS = config.groupAlias;
-const DRIVEAPP_ALIAS = config.driveAppAlias;
+const DRIVE_APP_ALIAS = config.driveAppAlias;
 
 // Get session
 const CURRENT_SESSION = localStorage.getItem("sessionId");
@@ -51,14 +51,15 @@ function dwClientLoaded() {
  */
 async function run() {
     showUsername();
+    setTabTitle(DRIVE_APP_ALIAS);
 
     try {
 
         // Run DriveApp
-        const driveApp = await DW_CLIENT.runDriveApp(GROUP_ALIAS, DRIVEAPP_ALIAS);
+        const driveApp = await DW_CLIENT.runDriveApp(GROUP_ALIAS, DRIVE_APP_ALIAS);
 
         // Render DriveApp
-        const driveAppOutput = document.getElementById("driveapp-output");
+        const driveAppOutput = document.getElementById("drive-app-output");
         await driveApp.render(driveAppOutput);
 
         // Attach events
@@ -196,4 +197,13 @@ function showUsername() {
 function beforeUnloadHandler(event) {
     event.preventDefault();
     event.returnValue = "Are you sure you want to leave this page?";
+}
+
+/**
+ * Set browser tab title
+ * 
+ * @param {Object} text - The text to display in the title.
+ */
+ function setTabTitle(text) {
+    document.title = `${text} | Run - DriveWorks`;
 }
