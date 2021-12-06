@@ -10,4 +10,8 @@ const config = {
     // This function prevents a DriveApp timing out as long as the page is in view.
     // Disable the ping by changing the setting to 0
     driveAppPingInterval: 0,
+    // (Optional) Configure 'Run' view
+    run: {
+        showWarningOnExit: true, // Toggle warning dialog when exiting "Run" view with potentially unsaved changes (where supported)
+    },
 };

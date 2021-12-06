@@ -1,5 +1,5 @@
 # DriveWorks Live - Integration Theme Example - Simple Login (DriveApps)
-### Release: 1.0.0
+### Release: 1.1.0
 #### Minimum DriveWorks Version: 18.1
 
 A simple distributable template that renders a predefined DriveApp after a valid login.
